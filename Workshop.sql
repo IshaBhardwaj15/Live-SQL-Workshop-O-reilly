@@ -79,7 +79,7 @@ where market_date>='2020-01-01'
 group by ticker,month_start
 order by ticker,month_start;
 
-3. Understanding CASE WHEN Statements:
+--3. Understanding CASE WHEN Statements:
 
 --Q1 Convert the volume column in the trading.prices table with an adjusted integer value to take into the unit values
 --Return only the market_date, price, volume and adjusted_volume columns for the first 10 days of August 2021 for Ethereum only
@@ -201,7 +201,7 @@ from ctee
 group by ticker,market_date,volume,previous_volume;
 
 
-5. Using Table Joins:
+--5. Using Table Joins:
  
 --Q1 Which top 3 mentors have the most Bitcoin quantity? Return the first_name of the mentors and sort the output from highest to lowest total_quantity
 select m.first_name,
